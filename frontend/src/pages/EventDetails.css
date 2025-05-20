@@ -1,0 +1,153 @@
+.event-details-page {
+  padding-bottom: 40px;
+}
+
+.event-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.event-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+  border-radius: 8px;
+}
+
+.event-banner-content {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  color: var(--white);
+}
+
+.event-banner-content h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.event-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+}
+
+.event-info-box {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: 24px;
+  position: sticky;
+  top: 90px;
+}
+
+.event-meta {
+  margin-bottom: 24px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.meta-item svg {
+  color: var(--primary-color);
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.meta-item span {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.registration-actions {
+  margin-top: 16px;
+}
+
+.registration-actions button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.login-prompt {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.login-prompt p {
+  margin-bottom: 12px;
+  color: var(--text-light);
+}
+
+.event-description-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: 24px;
+}
+
+.event-description-container h2 {
+  margin-bottom: 16px;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.event-description-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.event-description-container p {
+  color: var(--text-color);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.event-not-found {
+  text-align: center;
+  color: var(--text-light);
+  margin-top: 32px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .event-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-banner {
+    height: 200px;
+  }
+  
+  .event-banner-content h1 {
+    font-size: 24px;
+  }
+  
+  .event-info-box {
+    position: static;
+  }
+}
