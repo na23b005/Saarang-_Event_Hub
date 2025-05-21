@@ -28,7 +28,7 @@ A mini event management platform where users can browse upcoming events, sign up
 git clone https://github.com/your-username/saarang-event-hub.git
 cd saarang-event-hub
 
-text
+
 
 ---
 
@@ -39,7 +39,7 @@ text
 cd backend
 npm install
 
-text
+
 
 #### b. Configure Environment Variables
 
@@ -49,13 +49,12 @@ PORT=5000
 MONGODB_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_jwt_secret
 
-text
+
 
 #### c. Run the Backend Server
 
 npm run dev
 
-text
 The server will run on `http://localhost:5000`.
 
 ---
@@ -67,7 +66,7 @@ The server will run on `http://localhost:5000`.
 cd ../frontend
 npm install
 
-text
+
 
 #### b. Configure API Endpoint
 
@@ -76,7 +75,6 @@ If needed, update the API base URL in your frontend code (e.g., in `src/config.j
 export const API_BASE_URL = "http://localhost:5000";
 
 
-text
 The React app will run on `http://localhost:3000`.
 
 ---
