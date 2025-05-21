@@ -4,15 +4,7 @@ A mini event management platform where users can browse upcoming events, sign up
 
 ---
 
-## Features
 
-- User authentication (signup/login) using JWT
-- Browse list of upcoming events
-- View event details
-- Register/unregister for events
-- View "My Registrations" page
-
----
 
 ## Tech Stack
 
@@ -61,7 +53,7 @@ text
 
 #### c. Run the Backend Server
 
-npm start
+npm run dev
 
 text
 The server will run on `http://localhost:5000`.
@@ -83,11 +75,6 @@ If needed, update the API base URL in your frontend code (e.g., in `src/config.j
 
 export const API_BASE_URL = "http://localhost:5000";
 
-text
-
-#### c. Run the Frontend
-
-npm start
 
 text
 The React app will run on `http://localhost:3000`.
@@ -102,41 +89,3 @@ The React app will run on `http://localhost:3000`.
 - Click on an event to view details and register/unregister.
 - Go to "My Registrations" to see events you've signed up for.
 
----
-
-## JWT Storage Best Practices
-
-- **Frontend:** Store JWT in memory or sessionStorage for improved security. Avoid localStorage if possible.
-- **Backend:** Always verify JWT on protected routes.
-
----
-
-## Testing
-
-- To run backend tests (if available):
-
-npm test
-
-text
-
-- To run frontend tests (if available):
-
-npm test
-
-text
-
----
-
-## Deployment
-
-- Deploy backend (Node.js/Express) to services like Heroku, Render, or Vercel.
-- Deploy frontend (React) to Netlify, Vercel, or GitHub Pages.
-- Ensure environment variables are set in your deployment environment.
-
----
-
-## License
-
-MIT
-
----
